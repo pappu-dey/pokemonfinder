@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background"
+    tools:context=".PokemonFinder">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Pokémon Finder"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:elevation="4dp"/>
+
+    <!-- Input Field -->
+    <EditText
+        android:id="@+id/pokemonInput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Pokémon Name or ID"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:background="@drawable/input_field"
+        android:layout_below="@id/welcome"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="16dp"
+        android:textSize="16sp"
+        android:inputType="text"
+        android:elevation="4dp" />
+
+    <!-- Search Button -->
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pokemonInput"
+        android:layout_marginTop="19dp"
+        android:backgroundTint="@color/Zaffre"
+        android:padding="12dp"
+        android:text="Search"
+
+        android:textColor="@android:color/white"
+        android:textSize="18sp"/>
+
+    <!-- Result Text -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:layout_below="@id/searchButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:elevation="4dp"/>
+
+    <!-- Pokémon Image -->
+    <ImageView
+        android:id="@+id/pokeimage"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/resultTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/jigglypuff"
+        android:background="@drawable/image_border"
+        android:elevation="6dp"/>
+
+
+    <TextView
+        android:id="@+id/pokemonditel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pokémon Details will appear here"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:padding="12dp"
+        android:layout_below="@id/pokeimage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_info"
+        android:elevation="6dp"/>
+
+</RelativeLayout>

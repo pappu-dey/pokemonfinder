@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signin_background"
+    tools:context=".forgetpass">
+
+    <!-- Username or Email Input -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter your username or email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:background="@drawable/input_field"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <!-- New Password Input -->
+    <EditText
+        android:id="@+id/newpass"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_below="@id/username"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_field"
+        android:hint="Enter new password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <!-- Reset Password Button -->
+    <Button
+        android:id="@+id/resetpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newpass"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/Zaffre"
+        android:padding="12dp"
+        android:text="Reset Password"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>
